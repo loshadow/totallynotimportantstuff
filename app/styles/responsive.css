@@ -1,0 +1,504 @@
+
+@media only screen and (max-width: 40em) {
+
+
+p {
+	font-size: 10pt;
+}
+h2 {
+	font-size: 15pt;
+	margin: 5px 0;
+}
+h3 {
+	font-size: 15pt;
+	margin: 5px 0;
+}
+h4 {
+	font-size: 13pt;
+	margin: 5px 0;
+}
+.align-left {
+	text-align: center;
+}
+.align-right {
+	text-align: center;
+}
+
+
+.section-folds {
+	width: 100%;
+	height: auto;
+}
+header #tackthis-logo {
+	margin: 15px 0 15px 20px;
+}
+header #header-nav {
+	margin: 25px 10px 0 0;
+}
+header #header-nav p {
+	font-size: 9pt;
+	margin: 0 10px;
+}
+#section1 #macbook {
+	width: 80%;
+	left: 10%;
+}
+.section1-title {
+	width: 80%;
+	padding: 120px 0 0;
+	margin:0 auto;
+}
+.section1-title p {
+	font-size: 15pt;
+	line-height: 20pt;
+}
+#section1-get-started {
+	width: 150px;
+}
+#section1 p br {
+	display: none;
+}
+.section1-laptop-slider div img {
+	width: 80%;
+}
+#down-button {
+	width: 50px;
+	position: relative;
+	z-index: 2;
+	bottom: auto;
+	left: auto;
+	margin-left: 0;
+	display: table;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+
+nav #pull {
+	display: block;
+	padding: 20px 0 0 20px;
+	color: #a2a2a2;
+}
+nav #pull:hover {
+	color: #000;
+}
+nav ul li {
+	list-style: none;
+}
+nav .nav-options {
+	padding: 10px 0 0 20px;
+	margin: 10px 0 0 0;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	background: rgba(256,256,256,.9);
+	overflow: hidden;
+	display: none;
+	height: auto;
+	border-bottom: #a2a2a2 solid 1px;
+}
+nav .nav-options a {
+	font-size: 10pt;
+	color: #a2a2a2;
+	margin:10px;
+	display: block;
+	float: none;
+}
+nav #getstarted-nav {
+	position: relative;
+	float: right;
+	height: 35px;
+	margin: -30px 20px 0 0;
+}
+#section2-fold1b {
+	display: block;
+}
+#section2 #section2-fold1a h2 {
+	margin: 100px 0 0;
+}
+.section2-parts {
+	clear: both;
+	padding-top: 50px;
+	text-align: center;
+}
+.section2-parts p {
+	width: 80%;
+	margin: 0 10%;
+}
+
+.slick-dots {
+	text-align: center;
+	z-index: 99;
+}
+#section2-fold2 .row {
+	padding: 50px 0;
+}
+#section2-fold2-img {
+	width: 90%;
+	max-width: 90%;
+	margin-left: 0;
+}
+.section2-fold2-slider {
+	padding: 50px 0 0;
+}
+.section2-fold2-slider  p {
+	width: 90%;
+	margin: 0 5%;
+}
+.section2-fold2-slider h4 {
+	font-size: 17pt;
+}
+
+#section3 h2 {
+	padding: 50px 0 20px;
+}
+
+.price-options {
+	width: 95%;
+	margin: 29pt 2.5% 0;
+	background: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	display: block;
+	float: left;
+}
+.most-popular {
+	margin: 0 2.5% 0;
+}
+
+
+#section4 .section4-h2 {
+	position: relative;
+	height: auto;
+	left: auto;
+	padding: 0;
+	text-align: center;
+}
+#section4 .section4-slides-text {
+    display: block;
+    width: 90%;
+    padding: 0 5%;
+}
+#section4 .section4-slides-text br {
+    display: none;
+}
+#section4 .section4-slides {
+    display: block;
+    float: left;
+    width: 100%;
+	height: auto;
+	margin: 0;
+	text-align: center;
+}
+#section4 .section4-slider .section4-model {
+	float: none;
+	width: 50%;
+	margin:0 25%;
+	height: auto;
+}
+#section4 .section4-slides-text img {
+	display: table;
+	margin: 0 auto 20px;
+}
+#section4 .section4-slides p {
+	padding: 10px 2.5% 0 60px;
+	text-align: left;
+}
+#section4 .section4-slides h3 {
+	padding: 0 2.5% 0 60px;
+	text-align: left;
+}
+#section4 .section4-slides-text #section4-quotes {
+	position: absolute;
+	margin: 0;
+}
+
+footer {
+	padding:5px;
+}
+footer .darkgrey-text {
+	padding: 5px 20px;
+}
+footer p {
+	font-size: 8pt;
+}
+footer .footer-links {
+	padding: 20px 0;
+}
+footer .footer-links a {
+	float: none;
+	margin: 0 5px;
+}
+footer .footer-links a p {
+	text-align: center;
+}
+
+
+#popup-get-started .form-boxes {
+	width: 100%;
+	padding: 2%;
+	margin: 10px 0 0 0;
+}
+.popup-prices h2 {
+	width: 50%;
+	margin: 0 25% 20px;
+	padding: 10px;
+	border-bottom: #fff 2px solid;
+}
+.popup-description-list {
+	text-align: center;
+	width: 100%;
+	margin: 0;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+}
+.popup-prices-get-started {
+	width: 150px;
+	padding: 15px;
+	border: 1.5px #fff solid;
+	border-radius: 4px;
+	display: table;
+	margin: 20px auto 0;
+}
+.popup-prices-get-started a {
+	font-size: 10pt;
+}
+
+
+
+}
+
+
+
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+#section1 #macbook {
+	width: 50%;
+	left: 25%;
+}
+
+#section2-fold2 .align-left,
+#section2-fold2 .align-right {
+	text-align: center;
+}
+#section2-fold2-img {
+	width: 50%;
+	max-width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+#section2-fold2 .slick-dots {
+	text-align: center;
+}
+.section2-fold2-slider  p {
+	width: 70%;
+	margin: 0 15%;
+}
+
+.price-options {
+	width: 18%;
+	margin: 22pt 1% 0;
+}
+.most-popular {
+	margin: 0 1% 0;
+}
+.most-popular h6 {
+	font-size: 10pt;
+	margin: 5pt 0;
+}
+.price-options h5 {
+	font-size: 10pt;
+	border-bottom: #e1e1e1 solid 1px;
+}
+.price-options p {
+	margin: 12px 0;
+	font-size: 12px;
+}
+#section3 .slick-dots {
+	text-align: center;
+}
+#section4 .section4-h2 {
+	position: relative;
+	height: auto;
+	left: auto;
+	padding: 50px 0 0;
+	text-align: center;
+}
+#section4 .section4-slides-text {
+    display: block;
+    width: 90%;
+    padding: 0 5%;
+}
+#section4 .section4-slides {
+    display: block;
+    float: left;
+    width: 100%;
+	height: auto;
+	margin: 0;
+	text-align: center;
+}
+#section4 .section4-slider .section4-model {
+	float: none;
+	width: 50%;
+	margin:0 25%;
+	height: auto;
+}
+#section4 .section4-slides p {
+	padding: 0 2.5% 0;
+	text-align: center;
+}
+
+
+
+
+}
+
+
+
+
+/* help page */
+
+
+@media only screen and (max-width: 40em) {
+
+#help-section1 {
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+}
+.help-div {
+	text-align: center;
+	width: 90%;
+	margin: 20px 5% 50px;
+	position: relative;
+	top: auto;
+	left: auto;
+	transform: translate(0,0);
+	-webkit-transform: translate(0,0);
+	-moz-transform: translate(0,0);
+	-o-transform: translate(0,0);
+	-ms-transform: translate(0,0);
+}
+.help-textinput{
+	width: 100%;
+	height: 50px;
+	margin: 0 -50px 0 0;
+	display: block;
+	float: left;
+	background: #fff;
+	padding: 14px;
+}
+.help-textinput input {
+	font-family: 'GothamRounded-Book';
+	font-size: 10pt;
+	width: 90%;
+	text-align: left;
+	color: #a2a2a2;
+}
+.help-button {
+	margin: 0;
+	width: 50px;
+	height: 50px;
+}
+#help-section2 .row {
+	width: 90%;
+}
+#help-section2 {
+	width: 100%;
+	height: auto;
+	background: #f9f9f9;
+	padding: 50px 0;
+}
+.help-topics {
+	margin: 20px 0;
+}
+
+
+
+
+}
+
+
+
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+
+.help-div {
+	width: 80%;
+}
+
+
+}
+
+
+
+
+
+/* contact page */
+
+
+@media only screen and (max-width: 40em) {
+
+#contact-section1 {
+	padding: 100px 0 50px;
+}
+
+.map-div {
+	width: 90%;
+	margin: 50px 5% 20px;
+}
+
+
+
+
+}
+
+
+
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+
+
+}
+
+/* privacy and terms */
+
+@media only screen and (max-width: 40em) {
+
+.terms-section1 .align-left {
+	text-align: left;
+}
+.privacy-list-div {
+	border-top: 0;
+	padding: 0;
+}
+.privacy-list-div ul {
+	padding-left: 10px;
+}
+.terms-list-div,
+.terms-list-div ul {
+	padding-left: 0;
+}
+
+
+
+
+}
+
+
+
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+
+
+
+}
+
+
+
+
+
