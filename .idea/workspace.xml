@@ -1,60 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3a8d8196-690f-41c2-8cb1-ae5aaa50ed54" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/mailtest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\_DS_Store" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\back-to-top.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\down-button.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\getstarted-button.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\help-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\icon-fb.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\icon-twitter.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\macbook.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\price-options-1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\price-options-2.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\price-options-3.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\price-options-4.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\price-options-5.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\search-button.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section1-bg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section1-bg2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section1\_DS_Store" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section1\section1-bg1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section1\section1-bg2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section1\section1-laptop1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section1\section1-laptop2.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section2-fold2-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section2-part1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section2-part1\_DS_Store" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section2-part1\section2-part1a.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section2-part1\section2-part1b.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section2-part1\section2-part1c.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section2-part2.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section2-part3.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section2-part4\_DS_Store" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section2-part4\tack1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section2-part4\tack2.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section2-part4\tack3.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section3-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section4-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section4\_DS_Store" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section4\left-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section4\logo1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section4\merchant1.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section4\quotes.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section4\right-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\section5-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\tackthis-dashboard.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\paywhere static website\Images\tackthis-logo.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/contact.html" afterPath="$PROJECT_DIR$/app/views/contact.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/help.html" afterPath="$PROJECT_DIR$/app/views/help.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/privacy.html" afterPath="$PROJECT_DIR$/app/views/privacy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/terms.html" afterPath="$PROJECT_DIR$/app/views/terms.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="3a8d8196-690f-41c2-8cb1-ae5aaa50ed54" name="Default" comment="" />
     <ignored path="paywhere static website.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -279,7 +226,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1612" height="912" extended-state="1" />
+    <frame x="-8" y="-8" width="1612" height="912" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Grunt" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
