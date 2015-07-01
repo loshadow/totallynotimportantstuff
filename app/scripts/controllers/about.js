@@ -14,4 +14,6 @@ angular.module('paywhereStaticWebsiteApp')
       'AngularJS',
       'Karma'
     ];
+
+    console.log('here');
   });

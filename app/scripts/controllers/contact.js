@@ -2,18 +2,18 @@
 
 /**
  * @ngdoc function
- * @name paywhereStaticWebsiteApp.controller:MainCtrl
+ * @name paywhereStaticWebsiteApp.controller:AboutCtrl
  * @description
- * # MainCtrl
+ * # AboutCtrl
  * Controller of the paywhereStaticWebsiteApp
  */
 angular.module('paywhereStaticWebsiteApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('ContactCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 
-    console.log('test');
+    alert('test');
   });
