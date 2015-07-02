@@ -83,7 +83,7 @@ module.exports = function (grunt) {
             return [
               lrSnippet,
               modRewrite([
-                '!\\.html|\\.png|\\.jpg|\\.gif|\\.js|\\.css|\\woff|\\ttf|\\swf$ /index.html'
+                '!\\.php|\\.html|\\.png|\\.jpg|\\.gif|\\.js|\\.css|\\woff|\\ttf|\\swf$ /index.html'
               ]),
               mountFolder(connect, '.tmp'),
               mountFolder(connect, appConfig.app),

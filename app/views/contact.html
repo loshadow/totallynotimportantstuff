@@ -12,23 +12,23 @@
         </div>
 
         <div class="large-4 columns">
-          <form>
-            <div class="contact-form-boxes"><input type="text" placeholder="First Name"></div>
-            <div class="contact-form-boxes"><input type="text" placeholder="Last Name"></div>
-            <div class="contact-form-boxes"><input type="email" placeholder="Email Address"></div>
-            <div class="contact-form-boxes"><input type="text" placeholder="Contact Number"></div>
-            <div class="contact-form-boxes"><input type="text" placeholder="Company"></div>
+          <form action="/mail" method="POST">
+            <div class="contact-form-boxes"><input name="firstname" type="text" placeholder="First Name"></div>
+            <div class="contact-form-boxes"><input name="lastname" type="text" placeholder="Last Name"></div>
+            <div class="contact-form-boxes"><input name="email" type="email" placeholder="Email Address"></div>
+            <div class="contact-form-boxes"><input name="contact" type="text" placeholder="Contact Number"></div>
+            <div class="contact-form-boxes"><input name="company" type="text" placeholder="Company"></div>
             <div class="contact-form-boxes">
-              <select>
+              <select name="mail-type">
                 <option value="">Regarding:</option>
-                <option value="">Technical Enquiry</option>
-                <option value="">Sales Enquiry</option>
-                <option value="">Partnerships Enquiry</option>
-                <option value="">Resellers Enquiry</option>
+                <option value="Technical Enquiry">Technical Enquiry</option>
+                <option value="Sales Enquiry">Sales Enquiry</option>
+                <option value="Partnerships Enquiry">Partnerships Enquiry</option>
+                <option value="Resellers Enquiry">Resellers Enquiry</option>
               </select>
             </div>
             <div class="contact-form-textarea">
-              <textarea placeholder="Your message" rows="4"></textarea>
+              <textarea name="message" placeholder="Your message" rows="4"></textarea>
             </div>
             <div class="contact-form-submit">
               <input type="submit" value="SUBMIT">

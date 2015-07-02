@@ -32,6 +32,10 @@ angular
         templateUrl: 'views/contact.html',
         controller: 'ContactCtrl'
       })
+      .when('/mail', {
+        templateUrl: 'views/mail.php',
+        controller: 'MailCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
