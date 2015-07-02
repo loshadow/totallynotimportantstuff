@@ -1,0 +1,25 @@
+
+<a class="popup" href="#popup-get-started">
+  <span ng-if="!displayText">
+  <img src="images/getstarted-button.png">
+  </span>
+  <span ng-if="displayText">
+    <p>{{displayText}}</p>
+  </span>
+</a>
+
+
+
+<div id="popup-get-started" class="fade-anim mfp-hide">
+  <div class="popup-inner-container">
+    <img src="images/tackthis-logo.png">
+    <br>
+    <h2 class="white-text">Sign up for a free 15-Day trial!</h2>
+    <form>
+      <div class="form-boxes"><input type="text" placeholder="Name"></div>
+      <div class="form-boxes"><input type="email" placeholder="Email Address"></div>
+      <div class="form-boxes"><input type="password" placeholder="Password"></div>
+      <div class="form-submit form-boxes"><input class="form-submit" type="submit" value="GET STARTED"></div>
+    </form>
+  </div>
+</div>

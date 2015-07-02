@@ -213,7 +213,7 @@ nav .nav-options a {
 	display: block;
 	float: left;
 }
-nav #getstarted-nav {
+nav .getstarted-nav {
 	position: relative;
 	float: right;
 	width: auto;
