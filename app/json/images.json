@@ -1,0 +1,99 @@
+{
+  "set" : [
+    {
+      "images" : [
+        "images/section1/section1-laptop1.png",
+        "images/section1/section1-laptop2.png"
+      ],
+      "options" : [
+        {
+          "opt_name" : "autoplay",
+          "opt_val" : true
+        },
+        {
+          "opt_name" : "dots",
+          "opt_val" : false
+        },
+        {
+          "opt_name" : "arrows",
+          "opt_val" : false
+        },
+        {
+          "opt_name" : "fade",
+          "opt_val" : true
+        },
+        {
+          "opt_name" : "asNavFor",
+          "opt_val" : "'.section1-slider'"
+        }
+      ],
+      "css" : {
+        "name" : "section1-laptop-slider"
+      }
+    },
+    {
+      "images" : [
+        "images/section2-part1/section2-part1a.png",
+        "images/section2-part1/section2-part1b.png",
+        "images/section2-part1/section2-part1c.png"
+      ],
+      "options" : [
+        {
+          "opt_name" : "autoplay",
+          "opt_val" : true
+        },
+        {
+          "opt_name" : "infinite",
+          "opt_val" : true
+        },
+        {
+          "opt_name" : "dots",
+          "opt_val" : false
+        },
+        {
+          "opt_name" : "arrows",
+          "opt_val" : false
+        },
+        {
+          "opt_name" : "fade",
+          "opt_val" : true
+        }
+      ],
+      "css" : {
+        "name" : "section2-part1"
+      }
+    },
+    {
+      "images" : [
+        "images/section2-part4/tack1.png",
+        "images/section2-part4/tack2.png",
+        "images/section2-part4/tack3.png"
+      ],
+      "options" : [
+        {
+          "opt_name" : "autoplay",
+          "opt_val" : true
+        },
+        {
+          "opt_name" : "infinite",
+          "opt_val" : true
+        },
+        {
+          "opt_name" : "dots",
+          "opt_val" : false
+        },
+        {
+          "opt_name" : "arrows",
+          "opt_val" : false
+        },
+        {
+          "opt_name" : "fade",
+          "opt_val" : true
+        }
+      ],
+      "css" : {
+        "name" : "section2-part4-slider"
+      }
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 
 <a class="popup" href="#popup-get-started">
   <span ng-if="!displayText">
-  <img src="images/getstarted-button.png">
+  <img ng-class="assignClass" src="images/getstarted-button.png" />
   </span>
   <span ng-if="displayText">
     <p>{{displayText}}</p>

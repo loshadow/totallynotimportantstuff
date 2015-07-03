@@ -2,38 +2,38 @@
 
 $(document).ready(function(){
 
-	
-//nav	
+
+//nav
 	$(".back-to-top-link, nav ul li a,a[href='#section1'],a[href='#section2'],a[rel='m_PageScroll2id']").mPageScroll2id({
 		highlightSelector:".nav-options a"
 	});
-		
+
 
 //sticky
 	$("nav").sticky({topSpacing:0});
 
 //slick
-	$('.section1-slider, .section1-laptop-slider, .section2-part1, .section2-part4-slider').slick({
-	  autoplay: true,
-	  infinite: true,
-	  dots: false,
-	  arrows: false,
-	  fade: true
-	});
-	$('.section1-laptop-slider').slick({
-	  autoplay: true,
-	  dots: false,
-	  arrows: false,
-	  fade: true,
-	  asNavFor: '.section1-slider'
-	});
-
-	$('.section2-fold2-slider').slick({
-	  autoplay: true,
-	  infinite: true,
-	  dots: true,
-	  arrows: false,
-	})
+//	$('.section1-slider, .section1-laptop-slider, .section2-part1, .section2-part4-slider').slick({
+//	  autoplay: true,
+//	  infinite: true,
+//	  dots: false,
+//	  arrows: false,
+//	  fade: true
+//	});
+//	$('.section1-laptop-slider').slick({
+//	  autoplay: true,
+//	  dots: false,
+//	  arrows: false,
+//	  fade: true,
+//	  asNavFor: '.section1-slider'
+//	});
+//
+//	$('.section2-fold2-slider').slick({
+//	  autoplay: true,
+//	  infinite: true,
+//	  dots: true,
+//	  arrows: false
+//	})
 
 	$('.section4-slider').slick({
 	  autoplay: false,
@@ -41,7 +41,7 @@ $(document).ready(function(){
 	  dots: false,
 	  arrows: true,
 	  fade: false,
-	  adaptiveHeight: true,
+	  adaptiveHeight: true
 	});
 
 	$('.section3-price-slider').slick({
@@ -71,11 +71,11 @@ $(document).ready(function(){
 			arrows: false,
 			infinite: false,
 			speed: 300,
-			infinite: true,
+			infinite: true
 	      }
 	    }
 	  ]
-	});	
+	});
 
 
 //hide back to top
@@ -83,13 +83,13 @@ $(document).ready(function(){
 
 //show back to top
 	$(window).scroll(function () {
-			
+
 		if ($(this).scrollTop() > 500) {
 			$('#back-to-top').fadeIn();
 		} else {
 			$('#back-to-top').fadeOut();
-		}	
-								
+		}
+
 	});
 
 // lightbox
@@ -104,14 +104,14 @@ $(document).ready(function(){
 
 		closeBtnInside: true,
 		preloader: false,
-		
+
 		midClick: true,
 		removalDelay: 300,
 		mainClass: 'my-mfp-zoom-in'
 	});
 
 
-}); 
+});
 
 // collapsing menu
 

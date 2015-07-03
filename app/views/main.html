@@ -8,24 +8,10 @@
     <p>Create your online store <br>with TackThis!</p>
     <br>
     <pop-up link="popup"></pop-up>
-    <!--<a class="popup" href="#popup-get-started">-->
-      <!--<img src="images/getstarted-button.png" id="section1-get-started">-->
-    <!--</a>-->
+
   </div>
-  <div class="section1-slider">
-    <div class="section1-slider-slide1">
-    </div>
-    <div class="section1-slider-slide2">
-    </div>
-  </div>
-  <div class="section1-laptop-slider">
-    <div>
-      <img src="images/section1/section1-laptop1.png">
-    </div>
-    <div>
-      <img src="images/section1/section1-laptop2.png">
-    </div>
-  </div>
+  <bgslick-slide></bgslick-slide>
+  <slick-slide set="0"></slick-slide>
   <a href="#section2">
     <img src="images/down-button.png" id="down-button">
   </a>
@@ -57,17 +43,7 @@
 
     <div class="section2-parts">
       <div class="medium-7 columns">
-        <div class="section2-part1">
-          <div>
-            <img src="images/section2-part1/section2-part1a.png">
-          </div>
-          <div>
-            <img src="images/section2-part1/section2-part1b.png">
-          </div>
-          <div>
-            <img src="images/section2-part1/section2-part1c.png">
-          </div>
-        </div>
+        <slick-slide set="1"></slick-slide>
       </div>
       <div class="medium-5 columns">
         <h3 class="align-left">A beautiful online store.</h3>
@@ -103,17 +79,8 @@
 
     <div class="section2-parts">
       <div class="medium-7 columns float-right">
-        <div class="section2-part4-slider">
-          <div>
-            <img src="images/section2-part4/tack1.png">
-          </div>
-          <div>
-            <img src="images/section2-part4/tack2.png">
-          </div>
-          <div>
-            <img src="images/section2-part4/tack3.png">
-          </div>
-        </div>
+        <slick-slide set="2"></slick-slide>
+
       </div>
       <div class="medium-5 columns">
         <h3 class="align-right">Tackable anywhere!</h3>
@@ -136,32 +103,7 @@
         <img src="images/tackthis-dashboard.png" id="section2-fold2-img">
       </div>
       <div class="large-6 columns">
-        <div class="section2-fold2-slider align-left white-text">
-          <div>
-            <h4>Inventory Management</h4>
-            <p>
-              We save you the trouble from answering your customers' questions. Our dashboard allows you to provide all information needed ranging from prices, stocks, color and size variants and more.
-            </p>
-          </div>
-          <div>
-            <h4>Reports and Analytics</h4>
-            <p>
-              No need to have paper, pen, and calculator in hand. We give you the tools to keep tab on your sales. You can get monthly and daily updates of your sales with just a few clicks.
-            </p>
-          </div>
-          <div>
-            <h4>Customer Profile</h4>
-            <p>
-              Learn more about your customers and their shopping profiles. Knowing their buying behavior is a valuable tool that can give you insight on how to improve your services further.
-            </p>
-          </div>
-          <div>
-            <h4>Built-In Marketing</h4>
-            <p>
-              Entice customers to buy more by setting coupon codes, promo prices, and discount engines on your online store. We'll give you the tools to share your promos on social sites to attract even more customers.
-            </p>
-          </div>
-        </div>
+        <textslick-slide></textslick-slide>
       </div>
     </div>
 
@@ -422,4 +364,4 @@
   </div>
 </div>
 
-<!--<script src="scripts/directives/custom.directive.js"></script>-->
+<script src="scripts/page.js"></script>
