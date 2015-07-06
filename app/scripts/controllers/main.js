@@ -28,11 +28,11 @@ angular.module('paywhereStaticWebsiteApp')
 
     $scope.getNum = function( num) {
       $scope.subscription_id = num;
-      //console.log(num);
-      //console.log($scope.subscription_id);
+      console.log(num);
+      console.log($scope.subscription_id);
       $scope.fields.subscription_id = num;
       console.log($scope.fields);
-      //return $scope.subscription_id;
+
     };
 
     $scope.submitRegistration = function() {

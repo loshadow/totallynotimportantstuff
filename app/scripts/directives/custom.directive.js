@@ -25,8 +25,7 @@
         displayText: '@text'
       },
       link: function(scope, element, attrs) {
-        //scope.displayText = '';
-        console.log("displayText is " + scope.displayText);
+
 
         scope.initPop = function(){
           $('.popup').magnificPopup({
@@ -95,7 +94,6 @@
 
 
         retrieveImages.getImages().success(function(data) {
-          console.log("GETTING DATA SET "+ $scope.index);
 
           $scope.images = data.set[$scope.index].images;
           $scope.className = data.set[$scope.index].css.name;
@@ -104,11 +102,10 @@
             (key == sliderOptions.length-1)? sliderOptionString += value.opt_name + ": " + value.opt_val + "}" :
               sliderOptionString += value.opt_name + ": " + value.opt_val + ", ";
 
-            console.log("Value is " + value.opt_name + " Key is " + key + " array length is " + sliderOptions.length);
+            //console.log("Value is " + value.opt_name + " Key is " + key + " array length is " + sliderOptions.length);
           });
 
           $scope.slickSettings = sliderOptionString;
-          console.log("THIS SETTINGS APPLYIN " + $scope.slickSettings);
 
         }).error(function(data, status) {
           console.log("FAILED" + data + "STATUS IS " +status);
@@ -127,7 +124,6 @@
           }
 
           if ($scope.images.length > 0) {
-            console.log($scope.images.length);
             if (typeof $scope.className != 'undefined')
               $timeout(function() {
                 $scope.initSlide()
