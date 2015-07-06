@@ -19,7 +19,11 @@
 
         return '/views/' + link +'.html';
       },
+      scope: {
+        fields: '=fields'
+      },
       link: function(scope, element, attrs) {
+        console.log(scope);
         scope.displayText = '';
 
         scope.initPop = function(){
@@ -45,8 +49,6 @@
         if(typeof attrs.setClass != 'undefined') {
           scope.assignClass = attrs.setClass;
         }
-
-
 
         scope.initPop();
 

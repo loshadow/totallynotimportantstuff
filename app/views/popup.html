@@ -9,7 +9,8 @@
 </a>
 
 
-<div ng-controller="MainCtrl">
+<!--<div ng-controller="MainCtrl">-->
+<div>
 
   <div id="popup-get-started" class="fade-anim mfp-hide">
     <div class="popup-inner-container">
@@ -22,7 +23,7 @@
         <div class="form-boxes"><input type="password" ng-model="fields.password" placeholder="Password"></div>
         <div class="form-boxes" style="display : none;"><input type="text" ng-model="fields.referrer" placeholder="Referrer" ng-init="fields.referrer = referrer"></div>
         <!--<div class="form-boxes" style="display : none;"> <input type="text" ng-model="fields.subscription_id" placeholder="Subscription" ></div>-->
-        <div class="form-boxes" style="display : none;"> <input type="text" ng-model="fields.subscription_id" placeholder="Subscription" ng-init="fields.subscription_id = subscription_id"></div>
+        <div class="form-boxes" style="display : none;"> <input type="text" ng-model="fields.subscription_id" placeholder="Subscription"></div>
         <div class="form-boxes" style="display : none;"> <input type="text" ng-model="fields.country_code" placeholder="Country" ng-init="fields.country_code = country_code"></div>
         <div class="form-submit form-boxes"><input class="form-submit" type="submit" value="GET STARTED"></div>
       </form>
