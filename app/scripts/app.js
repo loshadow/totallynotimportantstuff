@@ -10,7 +10,7 @@
  */
 angular
   .module('paywhereStaticWebsiteApp', [
-    'ngAnimate',
+    //'ngAnimate', //temporary fix for the problem. Need to look up into it.
     'ngCookies',
     'ngResource',
     'ngRoute',
