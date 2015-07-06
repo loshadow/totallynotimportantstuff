@@ -44,38 +44,38 @@ $(document).ready(function(){
 	  adaptiveHeight: true
 	});
 
-	$('.section3-price-slider').slick({
-	  responsive: [
-	    {
-	      breakpoint: 100000,
-	      settings: "unslick"
-	    },
-	    {
-	      breakpoint: 640,
-	      settings: {
-	        slidesToShow: 1,
-	        slidesToScroll: 1,
-			dots: true,
-			arrows: false,
-			infinite: false,
-			speed: 300,
-			infinite: true,
-	      }
-	    },
-	    {
-	      breakpoint: 1024,
-	      settings: {
-	        slidesToShow: 3,
-	        slidesToScroll: 1,
-			dots: true,
-			arrows: false,
-			infinite: false,
-			speed: 300,
-			infinite: true
-	      }
-	    }
-	  ]
-	});
+	//$('.section3-price-slider').slick({
+	//  responsive: [
+	//    {
+	//      breakpoint: 100000,
+	//      settings: "unslick"
+	//    },
+	//    {
+	//      breakpoint: 640,
+	//      settings: {
+	//        slidesToShow: 1,
+	//        slidesToScroll: 1,
+	//		dots: true,
+	//		arrows: false,
+	//		infinite: false,
+	//		speed: 300,
+	//		infinite: true,
+	//      }
+	//    },
+	//    {
+	//      breakpoint: 1024,
+	//      settings: {
+	//        slidesToShow: 3,
+	//        slidesToScroll: 1,
+	//		dots: true,
+	//		arrows: false,
+	//		infinite: false,
+	//		speed: 300,
+	//		infinite: true
+	//      }
+	//    }
+	//  ]
+	//});
 
 
 //hide back to top

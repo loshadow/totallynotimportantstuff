@@ -20,11 +20,13 @@
         return '/views/' + link +'.html';
       },
       scope: {
-        fields: '=fields'
+        assignClass: '@setClass',
+        assignId: '@assignId',
+        displayText: '@text'
       },
       link: function(scope, element, attrs) {
-        console.log(scope);
-        scope.displayText = '';
+        //scope.displayText = '';
+        console.log("displayText is " + scope.displayText);
 
         scope.initPop = function(){
           $('.popup').magnificPopup({
@@ -42,12 +44,6 @@
             removalDelay: 300,
             mainClass: 'my-mfp-zoom-in'
           });
-        }
-        if(typeof attrs.text != 'undefined') {
-          scope.displayText = attrs.text;
-        }
-        if(typeof attrs.setClass != 'undefined') {
-          scope.assignClass = attrs.setClass;
         }
 
         scope.initPop();
@@ -143,6 +139,54 @@
       }
     };
   }]);
+
+  app.directive('priceSlide', function() {
+    return {
+      restrict: 'E',
+      templateUrl: function() {
+        return '/views/priceslider.html';
+      },
+      link: function(scope, element, attrs) {
+        scope.initPriceSlide = function(){
+          $('.section3-price-slider').slick({
+            responsive: [
+              {
+                breakpoint: 100000,
+                settings: "unslick"
+              },
+              {
+                breakpoint: 640,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  dots: true,
+                  arrows: false,
+                  speed: 300,
+                  infinite: true
+                }
+              },
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                  dots: true,
+                  arrows: false,
+                  speed: 300,
+                  infinite: true
+                }
+              }
+            ]
+          });
+        }
+
+
+        scope.initPriceSlide();
+
+      }
+    };
+  });
+
 
   app.directive('textslickSlide', function() {
     return {
