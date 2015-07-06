@@ -220,7 +220,7 @@
       link: function (scope, element, attrs) {
         $(document).ready(function() {
           var offset = 220;
-          var duration = 1000;
+          var duration = 500;
 
           $(".back-to-top-link, nav ul li a,a[href='#section1'],a[href='#section2'],a[rel='m_PageScroll2id']").mPageScroll2id({
             highlightSelector:".nav-options a"
