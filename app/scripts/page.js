@@ -4,9 +4,9 @@ $(document).ready(function(){
 
 
 //nav
-	$(".back-to-top-link, nav ul li a,a[href='#section1'],a[href='#section2'],a[rel='m_PageScroll2id']").mPageScroll2id({
-		highlightSelector:".nav-options a"
-	});
+//	$(".back-to-top-link, nav ul li a,a[href='#section1'],a[href='#section2'],a[rel='m_PageScroll2id']").mPageScroll2id({
+//		highlightSelector:".nav-options a"
+//	});
 
 
 //sticky
@@ -82,15 +82,15 @@ $(document).ready(function(){
 	$("#back-to-top").hide();
 
 //show back to top
-	$(window).scroll(function () {
-
-		if ($(this).scrollTop() > 500) {
-			$('#back-to-top').fadeIn();
-		} else {
-			$('#back-to-top').fadeOut();
-		}
-
-	});
+//	$(window).scroll(function () {
+//
+//		if ($(this).scrollTop() > 500) {
+//			$('#back-to-top').fadeIn();
+//		} else {
+//			$('#back-to-top').fadeOut();
+//		}
+//
+//	});
 
 // lightbox
 

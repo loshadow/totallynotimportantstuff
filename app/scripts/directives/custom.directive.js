@@ -165,5 +165,41 @@
     };
   });
 
+  app.directive('backToTop', function($timeout) {
+    return {
+      restrict: 'E',
+      template: '<a href="#" class="back-to-top">'+
+      '<img src="images/back-to-top.png" id="back-to-top">'+
+      '</a>',
+      link: function (scope, element, attrs) {
+        $(document).ready(function() {
+          var offset = 220;
+          var duration = 1000;
+
+          $(".back-to-top-link, nav ul li a,a[href='#section1'],a[href='#section2'],a[rel='m_PageScroll2id']").mPageScroll2id({
+            highlightSelector:".nav-options a"
+          });
+
+          $(window).scroll(function() {
+            if ($(this).scrollTop() > offset) {
+              $('.back-to-top').fadeIn(duration);
+            } else {
+              $('.back-to-top').fadeOut(duration);
+            }
+          });
+
+          $('.back-to-top').click(function(event) {
+            event.preventDefault();
+
+            $('html, body').animate({scrollTop: 0}, duration);
+            return false;
+          })
+          
+        });
+      }
+    };
+  });
+
+
 
 }())
