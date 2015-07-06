@@ -33,7 +33,7 @@ angular.module('paywhereStaticWebsiteApp')
 
           //$http.post('http://api.tackthis.localhost/auth/login',$scope.login);
           console.log('yay!');
-          window.location = "http://localhost:9000";
+          window.location = "http://dashboard.tackthis.com/";
 
 
 
