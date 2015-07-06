@@ -165,7 +165,7 @@
     };
   });
 
-  app.directive('backToTop', function($timeout) {
+  app.directive('backToTop', function() {
     return {
       restrict: 'E',
       template: '<a href="#" class="back-to-top">'+
@@ -194,12 +194,30 @@
             $('html, body').animate({scrollTop: 0}, duration);
             return false;
           })
-          
+
         });
       }
     };
   });
 
+
+  app.directive('scrollToSection', function() {
+    return {
+      restrict: 'E',
+      template: '<a href="#section2">' +
+      '<img src="images/down-button.png" id="down-button">' +
+      '</a>',
+      link: function (scope, element, attrs) {
+        $(document).ready(function() {
+
+          $(".back-to-top-link, nav ul li a,a[href='#section1'],a[href='#section2'],a[rel='m_PageScroll2id']").mPageScroll2id({
+            highlightSelector:".nav-options a"
+          });
+
+        });
+      }
+    };
+  });
 
 
 }())
