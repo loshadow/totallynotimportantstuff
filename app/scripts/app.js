@@ -32,12 +32,18 @@ angular
         templateUrl: 'views/contact.html',
         controller: 'ContactCtrl'
       })
-      .when('/mail', {
-        templateUrl: 'views/mail.php',
-        controller: 'MailCtrl'
+      .when('/terms', {
+        templateUrl: 'views/terms.html',
+        controller: 'TermsCtrl'
+      })
+      .when('/privacy', {
+        templateUrl: 'views/privacy.html',
+        controller: 'PrivacyCtrl'
       })
       .otherwise({
         redirectTo: '/'
       });
     $locationProvider.html5Mode(true);
   });
+
+

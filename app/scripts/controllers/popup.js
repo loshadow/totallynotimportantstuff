@@ -2,18 +2,18 @@
 
 /**
  * @ngdoc function
- * @name paywhereStaticWebsiteApp.controller:AboutCtrl
+ * @name paywhereStaticWebsiteApp.controller:MainCtrl
  * @description
- * # AboutCtrl
+ * # MainCtrl
  * Controller of the paywhereStaticWebsiteApp
  */
 angular.module('paywhereStaticWebsiteApp')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('PopupCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
 
-
+    console.log('test');
   });

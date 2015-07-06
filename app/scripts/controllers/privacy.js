@@ -8,7 +8,7 @@
  * Controller of the paywhereStaticWebsiteApp
  */
 angular.module('paywhereStaticWebsiteApp')
-  .controller('AboutCtrl', function ($scope) {
+  .controller('PrivacyCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

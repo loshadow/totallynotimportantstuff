@@ -12,14 +12,14 @@
         </div>
 
         <div class="large-4 columns">
-          <form action="/mail" method="POST">
-            <div class="contact-form-boxes"><input name="firstname" type="text" placeholder="First Name"></div>
-            <div class="contact-form-boxes"><input name="lastname" type="text" placeholder="Last Name"></div>
-            <div class="contact-form-boxes"><input name="email" type="email" placeholder="Email Address"></div>
-            <div class="contact-form-boxes"><input name="contact" type="text" placeholder="Contact Number"></div>
-            <div class="contact-form-boxes"><input name="company" type="text" placeholder="Company"></div>
+          <form ng-submit="submitForm()">
+            <div class="contact-form-boxes"><input name="firstname" type="text" ng-model="formData.firstname" ng-class="{'error' : errorFirstName}" placeholder="First Name"></div>
+            <div class="contact-form-boxes"><input name="lastname" type="text" ng-model="formData.lastname" ng-class="{'error' : errorLastName}" placeholder="Last Name"></div>
+            <div class="contact-form-boxes"><input name="email" type="email" ng-model="formData.email" ng-class="{'error' : errorEmail}" placeholder="Email Address"></div>
+            <div class="contact-form-boxes"><input name="contact" type="text" ng-model="formData.contact" ng-class="{'error' : errorContact}" placeholder="Contact Number"></div>
+            <div class="contact-form-boxes"><input name="company" type="text" ng-model="formData.company" ng-class="{'error' : errorCompany}" placeholder="Company"></div>
             <div class="contact-form-boxes">
-              <select name="mail-type">
+              <select name="mailtype" ng-model="formData.mailtype" ng-class="{'error' : errorMailType}">
                 <option value="">Regarding:</option>
                 <option value="Technical Enquiry">Technical Enquiry</option>
                 <option value="Sales Enquiry">Sales Enquiry</option>
@@ -27,11 +27,12 @@
                 <option value="Resellers Enquiry">Resellers Enquiry</option>
               </select>
             </div>
-            <div class="contact-form-textarea">
-              <textarea name="message" placeholder="Your message" rows="4"></textarea>
+            <div class="contact-form-textarea" >
+              <textarea name="message" ng-model="formData.message" ng-class="{'error' : errorMessage}" placeholder="Your message" rows="4"></textarea>
             </div>
             <div class="contact-form-submit">
-              <input type="submit" value="SUBMIT">
+              <input type="submit" value="SUBMIT" ng-click="submit()">
+              <div ng-class="{'submissionMessage' : submission}" ng-bind="submissionMessage"></div>
             </div>
           </form>
         </div>

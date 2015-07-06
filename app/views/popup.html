@@ -10,16 +10,23 @@
 
 
 
+
+
 <div id="popup-get-started" class="fade-anim mfp-hide">
   <div class="popup-inner-container">
     <img src="images/tackthis-logo.png">
     <br>
     <h2 class="white-text">Sign up for a free 15-Day trial!</h2>
-    <form>
-      <div class="form-boxes"><input type="text" placeholder="Name"></div>
-      <div class="form-boxes"><input type="email" placeholder="Email Address"></div>
-      <div class="form-boxes"><input type="password" placeholder="Password"></div>
+    <form ng-submit="submitRegistration()">
+      <div class="form-boxes"><input type="text" ng-model="fields.first_name" placeholder="Name"></div>
+      <div class="form-boxes"><input type="email" ng-model="fields.email" placeholder="Email Address"></div>
+      <div class="form-boxes"><input type="password" ng-model="fields.password" placeholder="Password"></div>
+      <div class="form-boxes" style="display : none;"><input type="text" ng-model="fields.referrer" placeholder="Referrer" ng-init="fields.referrer = referrer"></div>
+      <div class="form-boxes" style="display : none;"> <input type="text" ng-model="fields.subscription_id" placeholder="Subscription" ></div>
+      <!--<div class="form-boxes" style="display : none;"> <input type="text" ng-model="fields.subscription_id" placeholder="Subscription" ng-init="fields.subscription_id = subscription_id"></div>-->
+      <div class="form-boxes" style="display : none;"> <input type="text" ng-model="fields.country_code" placeholder="Country" ng-init="fields.country_code = country_code"></div>
       <div class="form-submit form-boxes"><input class="form-submit" type="submit" value="GET STARTED"></div>
     </form>
   </div>
+</div>
 </div>
