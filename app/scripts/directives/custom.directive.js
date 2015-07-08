@@ -52,7 +52,6 @@
 
 
         retrieveImages.getImages().success(function(data) {
-          console.log("GETTING DATA SET "+ $scope.index);
 
           $scope.images = data.set[$scope.index].images;
           $scope.className = data.set[$scope.index].css.name;
@@ -61,11 +60,9 @@
             (key == sliderOptions.length-1)? sliderOptionString += value.opt_name + ": " + value.opt_val + "}" :
               sliderOptionString += value.opt_name + ": " + value.opt_val + ", ";
 
-            console.log("Value is " + value.opt_name + " Key is " + key + " array length is " + sliderOptions.length);
           });
 
           $scope.slickSettings = sliderOptionString;
-          console.log("THIS SETTINGS APPLYIN " + $scope.slickSettings);
 
         }).error(function(data, status) {
           console.log("FAILED" + data + "STATUS IS " +status);
@@ -151,9 +148,6 @@
 
   app.directive('popUp', function() {
     return {
-
-      //require: '^priceSlider',
-      //scope: false,
       restrict: 'E',
       templateUrl: function(element, attrs,$http) {
         var link = '';
@@ -169,30 +163,20 @@
         displayText: '@text'
       },
       controller: function($scope, $http) {
-
-        //console.log('directive FTW');
-        //console.log($scope);
         $scope.referrer = "";
         $scope.subscription_id = "8";
         $scope.country_code = "PH";
         $scope.fields = {};
 
         $scope.getNum = function(num) {
-          //console.log($scope);
-          //console.log($scope.subscription_id);
 
           $scope.subscription_id = num;
           $scope.fields.subscription_id = num;
-          //console.log($scope.fields);
 
         };
 
         $scope.submitRegistration = function() {
-          //console.log($scope);
-          //console.log($scope.subscription_id);
-          //console.log($scope.fields.subscription_id);
           var data=$scope.fields;
-          //console.log(data);
           $http.post('http://api.tackthis.localhost/user/signup', data)
             .success(function() {
               window.location = "http://dashboard.tackthis.com/";
@@ -202,11 +186,6 @@
 
       },
       link: function(scope, element, attrs) {
-        //scope.displayText = '';
-        console.log(scope);
-        console.log(scope.fields);
-
-
 
         scope.initPop = function(){
           $('.popup').magnificPopup({
