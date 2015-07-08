@@ -31,7 +31,7 @@ angular.module('paywhereStaticWebsiteApp')
         method : 'POST',
         url : 'http://localhost/testfolder/mail.php',
         data : param($scope.formData), // pass in data as strings
-        headers : { 'Content-Type': 'application/x-www-form-urlencoded' } // set the headers so angular passing info as form data (not request payload)
+        headers : { 'Content-Type': 'application/x-www-form-urlencoded' }
       })
         .success(function(data) {
           if (!data.success) {

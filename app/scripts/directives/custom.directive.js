@@ -170,29 +170,29 @@
       },
       controller: function($scope, $http) {
 
-        console.log('directive FTW');
-        console.log($scope);
+        //console.log('directive FTW');
+        //console.log($scope);
         $scope.referrer = "";
         $scope.subscription_id = "8";
         $scope.country_code = "PH";
         $scope.fields = {};
 
         $scope.getNum = function(num) {
-          console.log($scope);
-          console.log($scope.subscription_id);
+          //console.log($scope);
+          //console.log($scope.subscription_id);
 
           $scope.subscription_id = num;
           $scope.fields.subscription_id = num;
-          console.log($scope.fields);
+          //console.log($scope.fields);
 
         };
 
         $scope.submitRegistration = function() {
-          console.log($scope);
-          console.log($scope.subscription_id);
-          console.log($scope.fields.subscription_id);
+          //console.log($scope);
+          //console.log($scope.subscription_id);
+          //console.log($scope.fields.subscription_id);
           var data=$scope.fields;
-          console.log(data);
+          //console.log(data);
           $http.post('http://api.tackthis.localhost/user/signup', data)
             .success(function() {
               window.location = "http://dashboard.tackthis.com/";
@@ -298,7 +298,8 @@
   app.directive('scrollToSection', function() {
     return {
       restrict: 'E',
-      template: '<a href="#section2" rel="m_PageScroll2id" data-ps2id-offset=".class-name"> ' +
+      template: '<a href="/#section2" rel="m_PageScroll2id" data-ps2id-offset=".class-name"> ' +
+      //template: '<a ng-click ="scrollTo(\'section2\')" rel="m_PageScroll2id" data-ps2id-offset=".class-name"> ' +
       '<img src="images/down-button.png" id="down-button">' +
       '</a>',
       link: function (scope, element, attrs) {

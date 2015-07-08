@@ -8,10 +8,14 @@
  * Controller of the paywhereStaticWebsiteApp
  */
 angular.module('paywhereStaticWebsiteApp')
-  .controller('MainCtrl', function ($scope, $http) {
+  .controller('MainCtrl', function ($scope, $location, $anchorScroll) {
 
 
 
-
+    //$scope.scrollTo = function(id) {
+    //  $location.hash(id);
+    //  $anchorScroll();
+    //}
+    //
 
   });
