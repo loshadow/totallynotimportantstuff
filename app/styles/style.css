@@ -114,7 +114,7 @@ header #header-nav p:hover {
 	position: fixed;
 	right: 20px;
 	bottom: 20px;
-	z-index: 100;
+	z-index: 500;
 	width: 50px;
 }
 

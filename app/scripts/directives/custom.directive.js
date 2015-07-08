@@ -267,6 +267,9 @@
           var offset = 220;
           var duration = 500;
 
+          var selector = $('.back-to-top');
+
+          selector.hide();
           $(".back-to-top-link, nav ul li a,a[href='#section1'],a[href='#section2'],a[rel='m_PageScroll2id']").mPageScroll2id({
             highlightSelector:".nav-options a"
           });
@@ -279,7 +282,7 @@
             }
           });
 
-          $('.back-to-top').click(function(event) {
+          selector.click(function(event) {
             event.preventDefault();
 
             $('html, body').animate({scrollTop: 0}, duration);
@@ -295,20 +298,60 @@
   app.directive('scrollToSection', function() {
     return {
       restrict: 'E',
-      template: '<a href="#section2">' +
+      template: '<a href="#section2" rel="m_PageScroll2id" data-ps2id-offset=".class-name"> ' +
       '<img src="images/down-button.png" id="down-button">' +
       '</a>',
       link: function (scope, element, attrs) {
         $(document).ready(function() {
 
-          $(".back-to-top-link, nav ul li a,a[href='#section1'],a[href='#section2'],a[rel='m_PageScroll2id']").mPageScroll2id({
+          var selector = $("[rel='m_PageScroll2id']");
+          //selector.attr("href", "#section2");
+          selector.mPageScroll2id({
+            //offset:50,
             highlightSelector:".nav-options a"
+
           });
 
         });
       }
     };
   });
+
+  app.directive('stickyNav', function() {
+    return {
+      restrict: 'E',
+      scope: false,
+      templateUrl: function() {
+        return '/views/stickynav.html';
+      },
+
+      link: function(scope, element, attrs) {
+        $(document).ready(function(){
+          $("nav").sticky({topSpacing:0});
+        });
+
+        $(function() {
+          var pull 		= $('#pull');
+          var menu 		= $('nav ul');
+          var menuHeight	= menu.height();
+
+          $(pull).on('click', function(e) {
+            e.preventDefault();
+            menu.slideToggle();
+          });
+
+          $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 320 && menu.is(':hidden')) {
+              menu.removeAttr('style');
+            }
+          });
+        });
+
+      }
+    };
+  });
+
 
 
 
