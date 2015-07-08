@@ -277,22 +277,12 @@
   app.directive('scrollToSection', function() {
     return {
       restrict: 'E',
-      template: '<a href="/#section2" rel="m_PageScroll2id" data-ps2id-offset=".class-name"> ' +
+      template: '<a href="#" scroll-to="section2" > ' +
       //template: '<a ng-click ="scrollTo(\'section2\')" rel="m_PageScroll2id" data-ps2id-offset=".class-name"> ' +
       '<img src="images/down-button.png" id="down-button">' +
       '</a>',
       link: function (scope, element, attrs) {
-        $(document).ready(function() {
 
-          var selector = $("[rel='m_PageScroll2id']");
-          //selector.attr("href", "#section2");
-          selector.mPageScroll2id({
-            //offset:50,
-            highlightSelector:".nav-options a"
-
-          });
-
-        });
       }
     };
   });
