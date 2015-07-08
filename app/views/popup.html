@@ -1,36 +1,158 @@
-<a class="popup" href="#popup-get-started">
+
+  <a class="popup" href="#popup-get-started">
   <span ng-if="!displayText">
   <img ng-class="assignClass" src="images/getstarted-button.png" id="{{assignId}}" />
   </span>
   <span ng-if="displayText">
     <p>{{displayText}}</p>
   </span>
-</a>
+  </a>
 
 
-<!--<div ng-controller="MainCtrl">-->
-<div>
 
-  <div id="popup-get-started" class="fade-anim mfp-hide">
-    <div class="popup-inner-container">
-      <img src="images/tackthis-logo.png">
-      <br>
-      <h2 class="white-text">Sign up for a free 15-Day trial!</h2>
-      <form ng-submit="submitRegistration()">
-        <div class="form-boxes"><input type="text" ng-model="fields.first_name" placeholder="Name"></div>
-        <div class="form-boxes"><input type="email" ng-model="fields.email" placeholder="Email Address"></div>
-        <div class="form-boxes"><input type="password" ng-model="fields.password" placeholder="Password"></div>
-        <div class="form-boxes" style="display : none;"><input type="text" ng-model="fields.referrer" placeholder="Referrer" ng-init="fields.referrer = referrer"></div>
-        <!--<div class="form-boxes" style="display : none;"> <input type="text" ng-model="fields.subscription_id" placeholder="Subscription" ></div>-->
-        <div class="form-boxes" style="display : none;"> <input type="text" ng-model="fields.subscription_id" placeholder="Subscription"></div>
-        <div class="form-boxes" style="display : none;"> <input type="text" ng-model="fields.country_code" placeholder="Country" ng-init="fields.country_code = country_code"></div>
-        <div class="form-submit form-boxes"><input class="form-submit" type="submit" value="GET STARTED"></div>
-      </form>
+
+  <div>
+
+    <div id="popup-get-started" class="fade-anim mfp-hide">
+      <div class="popup-inner-container">
+        <img src="images/tackthis-logo.png">
+        <br>
+        <h2 class="white-text">Sign up for a free 15-Day trial!</h2>
+        <form ng-submit="submitRegistration()">
+          <div class="form-boxes"><input type="text" ng-model="fields.first_name" placeholder="Name"></div>
+          <div class="form-boxes"><input type="email" ng-model="fields.email" placeholder="Email Address"></div>
+          <div class="form-boxes"><input type="password" ng-model="fields.password" placeholder="Password"></div>
+          <div class="form-boxes" style="display : none;"><input type="text" ng-model="fields.referrer" placeholder="Referrer" ng-init="fields.referrer = referrer"></div>
+          <!--<div class="form-boxes" style="display : none;"> <input type="text" ng-model="fields.subscription_id" placeholder="Subscription" ></div>-->
+          <div class="form-boxes" style="display : none;"> <input type="text" ng-model="fields.subscription_id" placeholder="Subscription" ng-init="fields.subscription_id = subscription_id"></div>
+          <div class="form-boxes" style="display : none;"> <input type="text" ng-model="fields.country_code" placeholder="Country" ng-init="fields.country_code = country_code"></div>
+          <div class="form-submit form-boxes"><input class="form-submit" type="submit" value="GET STARTED"ng-click="submitRegistration()"></div>
+        </form>
+      </div>
     </div>
   </div>
-</div>
 
 
 </div>
+
+
+
+  <!-- prices popip -->
+  <div id="popup-price1" class="fade-anim mfp-hide popup-prices">
+    <div class="popup-inner-container">
+      <h2>BASIC</h2>
+      <p>
+        Free Forever<br>
+        5 Products<br>
+        Easy setup of payment and delivery<br>
+        Tack your store anywhere<br>
+        Social Interaction Reports<br>
+        Mobile Store<br>
+        Customizable email templates and forms<br>
+        Membership Application<br>
+      </p>
+      <div class="popup-prices-get-started">
+        <a class="popup" href="#popup-get-started" ng-click="getNum('1')">GET STARTED &gt;</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup-price2" class="fade-anim mfp-hide popup-prices">
+    <div class="popup-inner-container">
+      <h2>NOVICE</h2>
+      <p>
+        Php299/Month<br>
+        30 Products<br>
+        Easy setup of payment and delivery<br>
+        Tack your store anywhere<br>
+        Social Interaction Reports<br>
+        Mobile Store<br>
+        Customizable email templates and forms<br>
+        Membership Application<br>
+      </p>
+      <div class="popup-prices-get-started">
+        <a class="popup" href="#popup-get-started" ng-click="getNum('4')">GET STARTED &gt;</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup-price3" class="fade-anim mfp-hide popup-prices">
+    <div class="popup-inner-container">
+      <h2>PROFESSIONAL</h2>
+      <p class="popup-description-list">
+        Php599/Month<br>
+        60 Products<br>
+        Easy setup of payment and delivery<br>
+        Tack your store anywhere<br>
+        Social Interaction Reports<br>
+        Mobile Store<br>
+        Customizable email templates and forms<br>
+        Membership Application<br>
+        Product Attribute<br>
+        Shop Alias<br>
+        Coupon Code and Discount Engine<br>
+        Professional Reports
+
+      </p>
+      <div class="popup-prices-get-started">
+        <a class="popup" href="#popup-get-started" ng-click="getNum('8')">GET STARTED &gt;</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup-price4" class="fade-anim mfp-hide popup-prices">
+    <div class="popup-inner-container">
+      <h2>EXPERT</h2>
+      <p class="popup-description-list">
+        Php899/Month<br>
+        100 Products<br>
+        Easy setup of payment and delivery<br>
+        Tack your store anywhere<br>
+        Social Interaction Reports<br>
+        Mobile Store<br>
+        Customizable email templates and forms<br>
+        Membership Application<br>
+        Product Attribute<br>
+        Shop Alias<br>
+        Coupon Code and Discount Engine<br>
+        Professional Reports<br>
+        Export Reports<br>
+        Members Only Price<br>
+        Product Bundles
+
+      </p>
+      <div class="popup-prices-get-started">
+        <a class="popup" href="#popup-get-started" ng-click="getNum('12')">GET STARTED &gt;</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup-price5" class="fade-anim mfp-hide popup-prices">
+    <div class="popup-inner-container">
+      <h2>PREMIUM</h2>
+      <p class="popup-description-list">
+        Php3500/Month<br>
+        Unlimited Products<br>
+        Easy setup of payment and delivery<br>
+        Tack your store anywhere<br>
+        Social Interaction Reports<br>
+        Mobile Store<br>
+        Customizable email templates and forms<br>
+        Membership Application<br>
+        Product Attribute<br>
+        Shop Alias<br>
+        Coupon Code and Discount Engine<br>
+        Professional Reports<br>
+        Export Reports<br>
+        Members Only Price<br>
+        Product Bundles<br>
+        Custom Domain
+
+      </p>
+      <div class="popup-prices-get-started">
+        <a class="popup" href="#popup-get-started" ng-click="getNum('14')">GET STARTED &gt;</a>
+      </div>
+    </div>
+  </div>
 
 

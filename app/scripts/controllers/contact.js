@@ -9,16 +9,13 @@
  */
 angular.module('paywhereStaticWebsiteApp')
   .controller('ContactCtrl', function ($scope,$http) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+
+    console.log('ContactCtrl');
+    console.log($scope);
 
     $scope.formData = {};
     // submission message doesn't show when page loads
     $scope.submission = false;
-    // Updated code thanks to Yotam
     var param = function(data) {
       var returnString = '';
       for (var d in data){

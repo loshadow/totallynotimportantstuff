@@ -3,7 +3,7 @@
   <div class="section1-title">
     <p>Create your online store <br>with TackThis!</p>
     <br>
-    <pop-up link="popup" assign-id="section1-get-started"></pop-up>
+    <pop-up link="popup" assign-id="section1-get-started" ng-click="getNum('8')"></pop-up>
 
   </div>
   <bgslick-slide></bgslick-slide>
@@ -16,7 +16,9 @@
 </div>
 
 <nav class="clearfix">
-
+  <outer-directive>
+    <inner-directive></inner-directive>
+  </outer-directive>
   <a class="nav-collapse-button" id="pull">BROWSE</a>
   <ul class="nav-options">
     <li><a href="#section2"><p>FEATURES</p></a></li>
@@ -180,122 +182,5 @@
   <!--</div>-->
 <!--</div>-->
 
-<!-- prices popip -->
-<div id="popup-price1" class="fade-anim mfp-hide popup-prices">
-  <div class="popup-inner-container">
-    <h2>BASIC</h2>
-    <p>
-      Free Forever<br>
-      5 Products<br>
-      Easy setup of payment and delivery<br>
-      Tack your store anywhere<br>
-      Social Interaction Reports<br>
-      Mobile Store<br>
-      Customizable email templates and forms<br>
-      Membership Application<br>
-    </p>
-    <div class="popup-prices-get-started">
-      <a class="popup" href="#popup-get-started">GET STARTED &gt;</a>
-    </div>
-  </div>
-</div>
-
-<div id="popup-price2" class="fade-anim mfp-hide popup-prices">
-  <div class="popup-inner-container">
-    <h2>NOVICE</h2>
-    <p>
-      Php299/Month<br>
-      30 Products<br>
-      Easy setup of payment and delivery<br>
-      Tack your store anywhere<br>
-      Social Interaction Reports<br>
-      Mobile Store<br>
-      Customizable email templates and forms<br>
-      Membership Application<br>
-    </p>
-    <div class="popup-prices-get-started">
-      <a class="popup" href="#popup-get-started">GET STARTED &gt;</a>
-    </div>
-  </div>
-</div>
-
-<div id="popup-price3" class="fade-anim mfp-hide popup-prices">
-  <div class="popup-inner-container">
-    <h2>PROFESSIONAL</h2>
-    <p class="popup-description-list">
-      Php599/Month<br>
-      60 Products<br>
-      Easy setup of payment and delivery<br>
-      Tack your store anywhere<br>
-      Social Interaction Reports<br>
-      Mobile Store<br>
-      Customizable email templates and forms<br>
-      Membership Application<br>
-      Product Attribute<br>
-      Shop Alias<br>
-      Coupon Code and Discount Engine<br>
-      Professional Reports
-
-    </p>
-    <div class="popup-prices-get-started">
-      <a class="popup" href="#popup-get-started">GET STARTED &gt;</a>
-    </div>
-  </div>
-</div>
-
-<div id="popup-price4" class="fade-anim mfp-hide popup-prices">
-  <div class="popup-inner-container">
-    <h2>EXPERT</h2>
-    <p class="popup-description-list">
-      Php899/Month<br>
-      100 Products<br>
-      Easy setup of payment and delivery<br>
-      Tack your store anywhere<br>
-      Social Interaction Reports<br>
-      Mobile Store<br>
-      Customizable email templates and forms<br>
-      Membership Application<br>
-      Product Attribute<br>
-      Shop Alias<br>
-      Coupon Code and Discount Engine<br>
-      Professional Reports<br>
-      Export Reports<br>
-      Members Only Price<br>
-      Product Bundles
-
-    </p>
-    <div class="popup-prices-get-started">
-      <a class="popup" href="#popup-get-started">GET STARTED &gt;</a>
-    </div>
-  </div>
-</div>
-
-<div id="popup-price5" class="fade-anim mfp-hide popup-prices">
-  <div class="popup-inner-container">
-    <h2>PREMIUM</h2>
-    <p class="popup-description-list">
-      Php3500/Month<br>
-      Unlimited Products<br>
-      Easy setup of payment and delivery<br>
-      Tack your store anywhere<br>
-      Social Interaction Reports<br>
-      Mobile Store<br>
-      Customizable email templates and forms<br>
-      Membership Application<br>
-      Product Attribute<br>
-      Shop Alias<br>
-      Coupon Code and Discount Engine<br>
-      Professional Reports<br>
-      Export Reports<br>
-      Members Only Price<br>
-      Product Bundles<br>
-      Custom Domain
-
-    </p>
-    <div class="popup-prices-get-started">
-      <a class="popup" href="#popup-get-started">GET STARTED &gt;</a>
-    </div>
-  </div>
-</div>
 
 <!--<script src="scripts/page.js"></script>-->
